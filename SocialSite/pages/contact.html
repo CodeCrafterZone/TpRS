@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Réseau social</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/SocialSite/app.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a href="/SocialSite/index.html" class="topbar-logo">Social</a>
+      <nav class="topbar-nav">
+        <a href="/SocialSite/index.html">Accueil</a>
+        <a href="/SocialSite/pages/historique.html" class="active"
+          >Historique</a
+        >
+        <a href="/SocialSite/pages/evenement.html">Evènement</a>
+        <a href="/SocialSite/pages/contact.html">Contact</a>
+      </nav>
+    </header>
+    <div class="container site">
+      <nav class="sidebar">
+        <a href="#" class="sidebar-home active">Fil d'actualité</a>
+        <a href="#" class="sidebar-messages">Messages</a>
+        <a href="#" class="sidebar-events">Evènement</a>
+        <a href="#" class="sidebar-group">Groupes</a>
+        <a href="#" class="sidebar-group">Amis</a>
+      </nav>
+      <main class="main">
+        <article class="card">
+          <form action="contact.html" class="form-contact">
+            <header class="card-header">
+              <h2 class="card-title">A vous de jouer</h2>
+              <div class="card-date"></div>
+            </header>
+            <div class="card-body">
+              <p>
+                <label for="firstname">Votre Nom <sup>*</sup></label>
+                <input
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                  placeholder="First Name"
+                  required
+                />
+                <label for="lastname"></label>
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  placeholder="Last Name"
+                  required
+                />
+              </p>
+              <p>
+                <label for="email">Votre email <sup>*</sup></label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="johndoe@gmail.com"
+                  required
+                />
+              </p>
+              <p>
+                <label for="tel">Votre numéro <sup>*</sup></label>
+                <input
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  placeholder="01.02.03.04.05"
+                  required
+                />
+              </p>
+              <p>
+                <label for="sujet">Sujet <sup>*</sup></label>
+                <select name="sujet" id="sujet">
+                  <option value=""></option>
+                  <option value="Demande d'informations">
+                    Demande d'informations
+                  </option>
+                  <option value="Autres">Autres</option>
+                </select>
+              </p>
+              <p>
+                <label for="message">Message</label><br />
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="10"
+                  cols="40"
+                  placeholder="Bonjour je vous contact......."
+                ></textarea>
+              </p>
+            </div>
+
+            <footer class="card-footer">
+              <button class="card-submit" type="submit">Envoyer</button>
+              <button class="card-reset" type="reset">Annuler</button>
+            </footer>
+          </form>
+        </article>
+      </main>
+      <aside class="aside">
+        <article class="card profil">
+          <header class="card-header card-header-avatar">
+            <img
+              src="/SocialSite/img/avatar.png"
+              width="45"
+              height="45"
+              class="card-avatar"
+              alt=""
+            />
+            <h2 class="card-title">Mon pseudo</h2>
+            <div class="card-date">En ligne il y'a 6 heures</div>
+          </header>
+          <div class="card-body">
+            <p>
+              Bonjour, je ferai de mon mieux pour vous répondre dans les plus
+              brefs délais.
+            </p>
+
+            <p>Je tiens à vous remercier pour votre patience.</p>
+            <p>
+              N'hésitez pas à nous envoyer un message si vous n'avez pas de
+              réponse de notre part dans les 48 heures.
+            </p>
+          </div>
+        </article>
+      </aside>
+    </div>
+  </body>
+</html>
